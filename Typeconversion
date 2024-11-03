@@ -1,0 +1,13 @@
+public class TypeConversionTango {
+    public static void main(String[] args) {
+        // your code goes here
+double a=10.09;
+int b=10;
+int b1=double(a);
+double a1=int(b);
+System.out.println(a1);
+System.out.println(b1);
+
+
+    }
+}
