@@ -1,0 +1,12 @@
+final class ImmutableCircle {
+    final double radius;
+
+    ImmutableCircle(double radius) {
+        this.radius = radius;
+    }
+
+    public static void main(String[] args) {
+        ImmutableCircle circle = new ImmutableCircle(5.0);
+        System.out.println("Radius: " + circle.radius);
+    }
+}
