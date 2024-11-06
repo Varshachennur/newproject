@@ -1,0 +1,12 @@
+public class ConstructorConnoisseur {
+    class InnerClass {
+        public InnerClass(int number) {
+            System.out.println("The number is: " + number);
+        }
+    }
+
+    public static void main(String[] args) {
+        ConstructorConnoisseur outerClass = new ConstructorConnoisseur();
+        InnerClass innerInstance = outerClass.new InnerClass(42);
+    }
+}
