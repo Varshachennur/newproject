@@ -1,0 +1,18 @@
+public class WhileLoopWizard {
+    public static void main(String[] args) {
+        int[] fibonacci = new int[10];
+        int num1 = 0, num2 = 1;
+        int index = 0;
+
+        while (index < 10) {
+            fibonacci[index] = num1;
+            int nextNum = num1 + num2;
+            num1 = num2;
+            num2 = nextNum;
+            index++;
+        }
+        for (int i = 9; i >= 0; i--) {
+            System.out.println(fibonacci[i]);
+        }
+    }
+}
