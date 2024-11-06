@@ -1,0 +1,11 @@
+interface Animal {
+    static void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal.sound();  
+    }
+}
