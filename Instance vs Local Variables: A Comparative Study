@@ -1,0 +1,14 @@
+public class Test {
+    int x = 10;
+
+    public void show() {
+        int x = 20;
+        System.out.println("Instance variable x: " + this.x);
+        System.out.println("Local variable x: " + x);
+    }
+
+    public static void main(String[] args) {
+        Test testObject = new Test();
+        testObject.show();
+    }
+}
