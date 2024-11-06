@@ -1,0 +1,17 @@
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        
+        int result1 = calc.add(5, 10);
+        System.out.println("Sum of two numbers: " + result1);
+        int result2 = calc.add(5, 10, 15);
+        System.out.println("Sum of three numbers: " + result2);
+    }
+}
