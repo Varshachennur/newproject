@@ -1,0 +1,18 @@
+public class Test {
+    static int a;
+    int b;
+
+    public void show() {
+        int c = 10;
+        System.out.println("Static variable a: " + a);
+        System.out.println("Instance variable b: " + b);
+        System.out.println("Local variable c: " + c);
+    }
+
+    public static void main(String[] args) {
+        Test testObject = new Test();
+        a = 5;
+        testObject.b = 15;
+        testObject.show();
+    }
+}
