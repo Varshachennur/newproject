@@ -1,0 +1,12 @@
+public class CastingConnoisseur {
+    public static void main(String[] args) {
+        double doubleValue = 10.75;
+        int intValue = 5;
+        int castedInt = (int) doubleValue;
+        double castedDouble = (double) intValue
+        System.out.println("Original double value: " + doubleValue);
+        System.out.println("Original integer value: " + intValue);
+        System.out.println("Double casted to integer: " + castedInt);
+        System.out.println("Integer casted to double: " + castedDouble);
+    }
+}
