@@ -1,0 +1,10 @@
+public class GreatTypeTransformation {
+    public static void main(String[] args) {
+        // your code goes here
+double d=10.0;
+int a=(int)d;
+System.out.println("double value"+d);
+System.out.println("converting into int":+a);
+
+    }
+}
