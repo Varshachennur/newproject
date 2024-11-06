@@ -1,0 +1,14 @@
+public class MethodMaestro {
+    class InnerClass {
+        public int square(int number) {
+            return number * number;
+        }
+    }
+
+    public static void main(String[] args) {
+        MethodMaestro outerClass = new MethodMaestro();
+        InnerClass innerInstance = outerClass.new InnerClass();
+        int result = innerInstance.square(5);
+        System.out.println("The square of the number is: " + result);
+    }
+}
