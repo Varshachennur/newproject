@@ -1,0 +1,12 @@
+public class Main {
+    
+    public static String sayHello(String name) {
+        String greeting = "Hello, " + name;
+        return greeting;
+    }
+
+    public static void main(String[] args) {
+        String greetingMessage = sayHello("Alice");
+        System.out.println(greetingMessage);
+    }
+}
