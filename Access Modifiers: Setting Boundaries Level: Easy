@@ -1,0 +1,22 @@
+public class Car {
+    private String color;
+    String model;
+    protected int year;
+    public double price;
+
+    public void describe() {
+        System.out.println("Car Description: ");
+        System.out.println("Color: " + color);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
+        System.out.println("Price: " + price);
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.model = "Sedan";
+        myCar.year = 2024;
+        myCar.price = 25000.50;
+        myCar.describe();
+    }
+}
