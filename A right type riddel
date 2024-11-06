@@ -1,0 +1,13 @@
+public class RightTypeRiddle {
+    public static void main(String[] args) {
+        int myInt = 42;
+        double myDouble = 3.14;
+        char myChar = 'R';
+        boolean myBoolean = true;
+
+        System.out.println("Integer value: " + myInt + " (Data type: int)");
+        System.out.println("Double value: " + myDouble + " (Data type: double)");
+        System.out.println("Character value: " + myChar + " (Data type: char)");
+        System.out.println("Boolean value: " + myBoolean + " (Data type: boolean)");
+    }
+}
