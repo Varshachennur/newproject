@@ -1,0 +1,30 @@
+public class Car {
+    private String color;
+    private String model;
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        
+        myCar.setColor("Blue");
+        myCar.setModel("SUV");
+        
+        System.out.println("Color: " + myCar.getColor());
+        System.out.println("Model: " + myCar.getModel());
+    }
+}
