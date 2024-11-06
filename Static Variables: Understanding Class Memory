@@ -1,0 +1,14 @@
+public class Test {
+    static int x;
+
+    public static void main(String[] args) {
+        Test obj1 = new Test();
+        Test obj2 = new Test();
+
+        obj1.x = 10;
+        obj2.x = 20;
+
+        System.out.println("Object 1, x: " + obj1.x);
+        System.out.println("Object 2, x: " + obj2.x);
+    }
+}
