@@ -1,0 +1,17 @@
+public class Circle {
+    final double PI = 3.14159;
+    double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double calculateArea() {
+        return PI * radius * radius;
+    }
+
+    public static void main(String[] args) {
+        Circle myCircle = new Circle(5);
+        System.out.println("Area of the circle: " + myCircle.calculateArea());
+    }
+}
