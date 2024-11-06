@@ -1,0 +1,8 @@
+public class TypeConversionTango {
+    public static void main(String[] args) {
+        double originalValue = 9.87;
+        int castedValue = (int) originalValue;
+        System.out.println("Original double value: " + originalValue);
+        System.out.println("Casted integer value: " + castedValue);
+    }
+}
