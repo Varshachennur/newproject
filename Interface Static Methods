@@ -1,0 +1,9 @@
+public interface Animal {
+    static void eat() {
+        System.out.println("Eating...");
+    }
+    
+    public static void main(String[] args) {
+        Animal.eat();
+    }
+}
