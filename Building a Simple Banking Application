@@ -1,0 +1,60 @@
+public class BankAccount {
+    private String accountNumber;
+    private double balance;
+    private String holderName;
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+    public double getBalance() {
+        return balance;
+    }
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    public String getHolderName() {
+        return holderName;
+    }
+    public void setHolderName(String holderName) {
+        this.holderName = holderName;
+    }
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        } else {
+            System.out.println("Invalid deposit amount.");
+        }
+    }
+    public void withdraw(double amount) {
+        if (amount > balance) {
+            System.out.println("Error: Insufficient balance.");
+        } else if (amount > 0) {
+            balance -= amount;
+        } else {
+            System.out.println("Invalid withdrawal amount.");
+        }
+    }
+
+    public static void main(String[] args) {
+        BankAccount myAccount = new BankAccount();
+        
+        myAccount.setAccountNumber("12345");
+        myAccount.setHolderName("John Doe");
+        myAccount.setBalance(1000.00);
+        
+        System.out.println("Account Number: " + myAccount.getAccountNumber());
+        System.out.println("Holder Name: " + myAccount.getHolderName());
+        System.out.println("Initial Balance: " + myAccount.getBalance());
+
+        myAccount.deposit(500.00);
+        System.out.println("Balance after deposit: " + myAccount.getBalance());
+
+        myAccount.withdraw(200.00);
+        System.out.println("Balance after withdrawal: " + myAccount.getBalance());
+
+        myAccount.withdraw(2000.00); 
+    }
+}
