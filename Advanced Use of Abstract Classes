@@ -1,0 +1,28 @@
+abstract class Bird {
+    String name;
+    Bird(String name) {
+        this.name = name;
+    }
+
+    abstract void sing();
+
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Sparrow extends Bird {
+    Sparrow(String name) {
+        super(name);
+    }
+    public void sing() {
+        System.out.println("Singing...");
+    }
+
+    public static void main(String[] args) {
+        Sparrow sparrow = new Sparrow("Chirpy");
+        System.out.println("Sparrow's name: " + sparrow.name);
+        sparrow.sing();  
+        sparrow.eat();   
+    }
+}
