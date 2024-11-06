@@ -1,0 +1,19 @@
+abstract class Bird {
+    abstract void sing();
+    
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Sparrow extends Bird {
+    public void sing() {
+        System.out.println("Singing...");
+    }
+
+    public static void main(String[] args) {
+        Sparrow sparrow = new Sparrow();
+        sparrow.sing();
+        sparrow.eat();
+    }
+}
