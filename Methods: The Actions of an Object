@@ -1,0 +1,16 @@
+public class Car {
+    String color;
+    String model;
+    public Car(String color, String model) {
+        this.color = color;
+        this.model = model;
+    }
+    public void describe() {
+        System.out.println("This is a " + color + " " + model + ".");
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car("Red", "Sedan");
+        myCar.describe();
+    }
+}
