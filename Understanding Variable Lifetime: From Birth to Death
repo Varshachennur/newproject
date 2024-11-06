@@ -1,0 +1,17 @@
+public class Test {
+    int x;
+
+    public static void main(String[] args) {
+        Test testObject = new Test();
+        testObject.x = 10;
+        System.out.println("Instance variable x: " + testObject.x);
+
+        {
+            int x = 20;
+            x = 30;
+            System.out.println("Local variable x inside block: " + x);
+        }
+
+        System.out.println("Instance variable x after block: " + testObject.x);
+    }
+}
