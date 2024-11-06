@@ -1,0 +1,10 @@
+public class VariableValueVariance {
+    public static void main(String[] args) {
+        // your code goes here
+int num1=24;
+System.out.println("The value of the num1 is:"+num1);
+ num1=32;
+System.out.println("The changed value of the num1 is:"+num1);
+
+    }
+}
