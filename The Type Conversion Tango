@@ -1,0 +1,12 @@
+public class TypeConversionTango {
+    public static void main(String[] args) {
+        double doubleValue = 10.5;
+        int intValue = 20;
+
+        int convertedInt = (int) doubleValue;
+        double convertedDouble = (double) intValue;
+
+        System.out.println("Converted double to int: " + convertedInt);
+        System.out.println("Converted int to double: " + convertedDouble);
+    }
+}
