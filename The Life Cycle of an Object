@@ -1,0 +1,17 @@
+public class Car {
+
+    public Car() {
+        System.out.println("A new Car object has been created.");
+    }
+
+    @Override
+    protected void finalize() {
+        System.out.println("A Car object is about to be garbage collected.");
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar = null;
+        System.gc();
+    }
+}
