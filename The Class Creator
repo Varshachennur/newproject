@@ -1,0 +1,13 @@
+public class ClassCreator {
+    class InnerClass {
+        public void printMessage() {
+            System.out.println("Hello from the Inner Class!");
+        }
+    }
+
+    public static void main(String[] args) {
+        ClassCreator outerClass = new ClassCreator();
+        InnerClass innerInstance = outerClass.new InnerClass();
+        innerInstance.printMessage();
+    }
+}
