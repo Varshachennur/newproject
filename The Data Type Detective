@@ -1,0 +1,13 @@
+public class DataTypeDetective {
+    public static void main(String[] args) {
+        
+        int myInt = 100;
+        double myDouble = 9.99;
+        char myChar = 'D';
+        boolean myBoolean = false;
+        System.out.println("Integer value: " + myInt + " (Data type: int)");
+        System.out.println("Double value: " + myDouble + " (Data type: double)");
+        System.out.println("Character value: " + myChar + " (Data type: char)");
+        System.out.println("Boolean value: " + myBoolean + " (Data type: boolean)");
+    }
+}
