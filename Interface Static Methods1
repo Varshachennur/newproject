@@ -1,0 +1,10 @@
+interface Animal {
+    static void eat() {
+        System.out.println("Eating...");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal.eat();
+    }
+}
