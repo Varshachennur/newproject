@@ -1,0 +1,17 @@
+
+interface Animal {
+    void speak();
+}
+class Dog implements Animal {
+    @Override
+    public void speak() {
+        System.out.println("Woof!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.speak();  
+    }
+}
