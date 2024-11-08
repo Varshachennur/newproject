@@ -1,0 +1,17 @@
+class Animal {
+    public Animal(String message) {
+        System.out.println(message);
+    }
+}
+
+class Dog extends Animal {
+    public Dog() {
+        super("Dog constructor called");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog(); 
+    }
+}
