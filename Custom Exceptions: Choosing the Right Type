@@ -1,0 +1,17 @@
+
+class InvalidPasswordException extends RuntimeException {
+    public InvalidPasswordException(String message) {
+        super(message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        String password = "short";
+        if (password.length() < 8) {
+            throw new InvalidPasswordException("Password must be at least 8 characters long.");
+        }
+
+        System.out.println("Password is valid.");
+    }
+}
