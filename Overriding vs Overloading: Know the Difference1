@@ -1,0 +1,21 @@
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        
+        int sum2 = calculator.add(5, 10);  
+        int sum3 = calculator.add(5, 10, 15);  
+        
+        System.out.println("Sum of two numbers: " + sum2);
+        System.out.println("Sum of three numbers: " + sum3);
+    }
+}
